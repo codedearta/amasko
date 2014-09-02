@@ -1,0 +1,26 @@
+// amasko_foundation_settings
+
+$white       : #FFFFFF;
+
+$include-html-classes: true;
+$include-html-global-classes: 
+$include-html-classes;
+
+$font-weight-normal: normal !default;
+
+$body-bg: #fff2ea;
+$body-font-color: #653248;
+$body-font-family: Arimo, cursive;
+
+$header-font-color: #aa5578;
+
+$topbar-bg-color: #aa5578;
+$topbar-dropdown-bg: $topbar-bg-color;
+$topbar-link-bg-hover: scale-color($topbar-bg-color, $lightness: -14%);
+
+$topbar-menu-icon-color: $white;
+
+$topbar-menu-link-font-size: rem-calc(15);
+$topbar-menu-link-color-toggled: $white;
+$topbar-menu-link-transform: normal;
+$topbar-menu-link-weight: $font-weight-normal;
