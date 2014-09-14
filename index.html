@@ -7,7 +7,6 @@
     <link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-      
     <link href='css/app.css' rel='stylesheet' type='text/css'>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js'></script>  
   </head>
@@ -27,13 +26,13 @@
               
               <section class="top-bar-section">        
                 <!-- Left Nav Section -->
-                <ul class="middle">
-                  <li><a href="#/Home"><i class="fa fa-home">&nbsp;Home</i></a></li>
-                  <li><a href="#/Behandlungen"><i class="fa fa-leaf">&nbsp;Behandlungen</i></a></li>
-                  <li><a href="#/Gutscheine"><i class="fa fa-gift">&nbsp;Gutscheine</i></a></li>
-                  <li><a href="#/Gallerie"><i class="fa fa-picture-o">&nbsp;Gallerie</i></a></li>
-                  <li><a href="#/Shop"><i class="fa fa-shopping-cart">&nbsp;Shop</i></a></li>
-                  <li><a href="#/Kontakt"><i class="fa fa-envelope">&nbsp;Kontakt</i></a></li>
+                <ul class="middle"> 
+                  <li><a ui-sref="Home"><i class="fa fa-home">&nbsp;Home</i></a></li>
+                  <li><a ui-sref="Behandlungen"><i class="fa fa-leaf">&nbsp;Behandlungen</i></a></li>
+                  <li><a ui-sref="Gutscheine"><i class="fa fa-gift">&nbsp;Gutscheine</i></a></li>
+                  <li><a ui-sref="Gallerie"><i class="fa fa-picture-o">&nbsp;Gallerie</i></a></li>
+                  <li><a ui-sref="Shop"><i class="fa fa-shopping-cart">&nbsp;Shop</i></a></li>
+                  <li><a ui-sref="Kontakt"><i class="fa fa-envelope">&nbsp;Kontakt</i></a></li>
                 </ul>
               </section>
             </nav>
@@ -50,13 +49,14 @@
     <!-- Pages -->
     <div class="row">
       <div id="main"  class="small-12 medium-12 large-12 columns">
-        <div class="amasko-content" ng-view ></div>  
+        <div class="amasko-content" ui-view ></div>  
       </div>
     </div>
       
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/js/foundation.min.js"></script>
     <script src='http://code.angularjs.org/1.1.5/angular.js'></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js"></script>
     <script src='js/app.js'></script> 
   </body>

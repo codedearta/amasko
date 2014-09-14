@@ -1,14 +1,15 @@
-<div class="row" ng-cotroller="BehandlungenCtrl">
-    <div class="small-2 columns">
-        <ul class="side-nav" role="navigation" title="Link List">
-            <li role="menuitem"><a ng-click="selectSubCategory('Gesicht.html')">Gesicht</a></li>
-            <li role="menuitem"><a ng-click="selectSubCategory('Haende_und_Fuesse.html')">Hände und Füsse</a></li>
-            <li role="menuitem"><a ng-click="selectSubCategory('Haarentfernung.html')">Haarentfernung</a></li>
-            <li role="menuitem"><a ng-click="selectSubCategory('Wellness.html')">Körperbehandlung und Wellness</a></li>
-            <li role="menuitem"><a ng-click="selectSubCategory('Cellulite.html')">Cellulite Behandlung</a></li>
-            <li role="menuitem"><a ng-click="selectSubCategory('Fettreduktion.html')">Fettreduktion</a></li>
-            <li role="menuitem"><a ng-click="selectSubCategory('Powerplate.html')">Powerplate</a></li>
-        </ul>
-    </div>
-    <div class="small-10 columns" ng-include="template.url" ></div>
- </div>
+<div class="row"> 
+  <div class="large-2 columns">
+      <ul class="side-nav">
+          <li><a ui-sref="Behandlungen.Gesicht">Gesicht</a></li>
+          <li><a ui-sref="Behandlungen.Haende_und_Fuesse">Hände und Füsse</a></li>
+          <li><a ui-sref="Behandlungen.Haarentfernung">Haarentfernung</a></li>
+          <li><a ui-sref="Behandlungen.Wellness">Körperbehandlung und Wellness</a></li>
+          <li><a ui-sref="Behandlungen.Cellulite">Cellulite Behandlung</a></li>
+          <li><a ui-sref="Behandlungen.Fettreduktion">Fettreduktion</a></li>
+          <li><a ui-sref="Behandlungen.Powerplate">Powerplate</a></li>
+      </ul></div>
+  <div class="large-10 columns">
+      <div ui-view></div>
+  </div>
+</div>
