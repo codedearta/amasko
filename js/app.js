@@ -48,7 +48,7 @@ function BehandlungenCtrl($scope) {
       ];
     $scope.template = $scope.templates[0];
     
-    $scope.selectSubCategory = new function(page) {
+    $scope.selectSubCategory = function(page) {
         $scope.template = _.find($scope.templates, { 'page': page });
     }
 }
