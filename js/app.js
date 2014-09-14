@@ -38,18 +38,18 @@ function AmaskoController($scope) {
 function BehandlungenCtrl($scope) {
   $scope.name = 'Welcome to Amasko';
     $scope.templates =
-      [ { name: 'Gesicht.html', url: 'pages/Behandlungen/Gesicht.html'},
-        { name: 'Haende_und_Fuesse.html', url: 'pages/Behandlungen/Haende_und_Fuesse.html'},
-        { name: 'Haarentfernung.html', url: 'pages/Behandlungen/Haarentfernung.html'},
-        { name: 'Wellness.html', url: 'pages/Behandlungen/Wellness.html'},
-        { name: 'Cellulite.html', url: 'pages/Behandlungen/Cellulite.html'},
-        { name: 'Fettreduktion.html', url: 'pages/Behandlungen/Fettreduktion.html'},
-        { name: 'Powerplate.html', url: 'pages/Behandlungen/Powerplate.html'} 
+      [ { page: 'Gesicht.html', url: 'pages/Behandlungen/Gesicht.html'},
+        { page: 'Haende_und_Fuesse.html', url: 'pages/Behandlungen/Haende_und_Fuesse.html'},
+        { page: 'Haarentfernung.html', url: 'pages/Behandlungen/Haarentfernung.html'},
+        { page: 'Wellness.html', url: 'pages/Behandlungen/Wellness.html'},
+        { page: 'Cellulite.html', url: 'pages/Behandlungen/Cellulite.html'},
+        { page: 'Fettreduktion.html', url: 'pages/Behandlungen/Fettreduktion.html'},
+        { page: 'Powerplate.html', url: 'pages/Behandlungen/Powerplate.html'} 
       ];
     $scope.template = $scope.templates[0];
     
-    $scope.selectSubCategory = new function(name) {
-        $scope.template = _.find($scope.templates, { 'name': name });
+    $scope.selectSubCategory = new function(page) {
+        $scope.template = _.find($scope.templates, { 'page': page });
     }
 }
 
