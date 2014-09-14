@@ -1,7 +1,7 @@
 
 // Code goes here
 
-var Amasko = angular.module('Amasko', ['ui.router']). // route configuration of view and controllers
+var Amasko = angular.module('Amasko', ['ui.router','google-maps']). // route configuration of view and controllers
 //config(['$routeProvider', function ($routeProvider) {
 //    $routeProvider.
 //    when('/Behandlungen', {
@@ -97,31 +97,38 @@ config(function($stateProvider, $urlRouterProvider) {
     })
     .state('Kontakt', {
       url: '/Kontakt',
-      templateUrl: 'pages/Kontakt.html'
+      templateUrl: 'pages/Kontakt.html',
+      controller: function($scope) {
+
+        var ll = new google.maps.LatLng(47.372172,8.534329);
+        $scope.mapOptions = {
+            center: ll,
+            zoom: 18,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+        //Markers should be added after map is loaded
+        $scope.onMapIdle = function() {
+            if ($scope.myMarkers === undefined){    
+                var marker = new google.maps.Marker({
+                    map: $scope.myMap,
+                    position: ll
+                });
+                $scope.myMarkers = [marker, ];
+            }
+        };
+
+        $scope.markerClicked = function(m) {
+            window.alert("clicked");
+        };
+      
+          
+
+
+
+      }
     });
 });
 
-
-function AmaskoController($scope) {
-  $scope.name = 'Welcome to Amasko';
-}
-
-function BehandlungenCtrl($scope) {
-  $scope.name = 'Welcome to Amasko';
-    $scope.templates =
-      [ { page: 'Gesicht.html', url: 'pages/Behandlungen/Gesicht.html'},
-        { page: 'Haende_und_Fuesse.html', url: 'pages/Behandlungen/Haende_und_Fuesse.html'},
-        { page: 'Haarentfernung.html', url: 'pages/Behandlungen/Haarentfernung.html'},
-        { page: 'Wellness.html', url: 'pages/Behandlungen/Wellness.html'},
-        { page: 'Cellulite.html', url: 'pages/Behandlungen/Cellulite.html'},
-        { page: 'Fettreduktion.html', url: 'pages/Behandlungen/Fettreduktion.html'},
-        { page: 'Powerplate.html', url: 'pages/Behandlungen/Powerplate.html'} 
-      ];
-    $scope.template = $scope.templates[0];
-    
-    $scope.selectSubCategory = function(page) {
-        $scope.template = _.find($scope.templates, { 'page': page });
-    }
-}
 
 $(document).foundation();
