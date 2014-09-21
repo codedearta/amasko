@@ -1,5 +1,5 @@
 .logo {
-    padding-top: 10px/* width:100%; */
+    padding: 15px/* width:100%; */
 }
 
 .amasko-content {
@@ -24,7 +24,7 @@
 }
 
 
-//@media only screen and (min-width: 10em) {
-//    .top-bar-section ul {display: table; margin: 0 auto;}
-//    .top-bar-section ul li {display: table-cell;}
-//}
+@media only screen and (min-width: 10em) {
+    .top-bar-section ul {display: table; margin: 0 auto;}
+    .top-bar-section ul li {display: table-cell;}
+}
