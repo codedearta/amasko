@@ -10,12 +10,13 @@ $white: #FFFFFF;
 $black: #000000;
 $blue: #008CBA;
 $brown: #653248;
+$olive: #5c482f;
     
 $background-light-color : $creme;
 $background-mid-color : $purple;
 $background-dark-color : $creme;
 
-$text-light-color: $purple;
+$text-light-color: $olive;
 $text-mid-color: $blue;
 $text-dark-color: $brown;
 
@@ -29,7 +30,7 @@ $font-weight-normal: normal !default;
 $body-font-family: Arimo, cursive;
 
 // topbar
-$topbar-link-color: $purple !default;
+$topbar-link-color: $olive !default;
 $topbar-bg-color: $background-dark-color;
 $topbar-dropdown-bg: $topbar-bg-color;
 $topbar-link-bg-hover: scale-color($topbar-bg-color, $lightness: -14%);
@@ -49,7 +50,7 @@ $side-nav-list-type: none;
 $side-nav-list-position: inside;
 $side-nav-list-margin: rem-calc(0 0 7 0);
 // We use these to control link styles.
-$side-nav-link-color: $purple;
+$side-nav-link-color: $olive;
 $side-nav-link-color-active: $primary-color;
 $side-nav-link-color-hover: $primary-color;
 //$side-nav-link-color-active: scale-color($side-nav-link-color, $lightness: 20%);
