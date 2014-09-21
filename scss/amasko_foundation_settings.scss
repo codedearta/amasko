@@ -49,7 +49,7 @@ $side-nav-list-type: none;
 $side-nav-list-position: inside;
 $side-nav-list-margin: rem-calc(0 0 7 0);
 // We use these to control link styles.
-$side-nav-link-color: $primary-color;
+$side-nav-link-color: $purple;
 $side-nav-link-color-active: $primary-color;
 $side-nav-link-color-hover: $primary-color;
 //$side-nav-link-color-active: scale-color($side-nav-link-color, $lightness: 20%);
@@ -66,7 +66,7 @@ $side-nav-divider-color: scale-color($white, $lightness: 10%);
 
 // accordion
 $include-html-accordion-classes: $include-html-classes;
-$accordion-navigation-padding: 8px;
+$accordion-navigation-padding: 5px;
 $accordion-navigation-bg-color: scale-color($body-bg, $lightness: -10%);
 $accordion-navigation-hover-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -5%);
 $accordion-navigation-active-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -3%);
