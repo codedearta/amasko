@@ -1,43 +1,4 @@
-
-// Code goes here
-
-var Amasko = angular.module('Amasko', ['ui.router','google-maps']). // route configuration of view and controllers
-//config(['$routeProvider', function ($routeProvider) {
-//    $routeProvider.
-//    when('/Behandlungen', {
-//        templateUrl: 'pages/Behandlungen.html',
-//        controller: BehandlungenCtrl
-//    }).    
-//    when('/Behandlungen/Gesicht', {
-//        templateUrl: 'pages/Behandlungen.html',
-//        controller: BehandlungenCtrl
-//    }).
-//    when('/Behandlungen/Haende_und_Fuesse', {
-//        templateUrl: 'pages/Behandlungen.html',
-//        controller: BehandlungenCtrl
-//    }).  
-//       
-//    when('/Gutscheine', {
-//        templateUrl: 'pages/Gutscheine.html',
-//        controller: AmaskoController
-//    }).
-//    when('/Gallerie', {
-//        templateUrl: 'pages/Gallerie.html',
-//        controller: AmaskoController
-//    }).
-//    when('/Shop', {
-//        templateUrl: 'pages/Shop.html',
-//        controller: AmaskoController
-//    }).
-//    when('/Kontakt', {
-//        templateUrl: 'pages/Kontakt.html',
-//        controller: AmaskoController
-//    }).
-//    otherwise({
-//        templateUrl: 'pages/Behandlungen.html',
-//        controller: AmaskoController
-//    });
-//}]);
+var Amasko = angular.module('Amasko', ['ui.router','google-maps', 'mm.foundation']).
 
 config(function($stateProvider, $urlRouterProvider) {
   //
@@ -52,7 +13,11 @@ config(function($stateProvider, $urlRouterProvider) {
     })
     .state('Behandlungen', {
       url: '/Behandlungen',
-      templateUrl: 'pages/Behandlungen.html'
+      templateUrl: 'pages/Behandlungen.html',
+      controller: function($scope) {
+        $scope.oneAtATime = true;
+        //$scope.isOpen = false;
+      }
     })
     .state('Behandlungen.Gesicht', {
       url: "/Behandlungen/Gesicht",
@@ -121,11 +86,6 @@ config(function($stateProvider, $urlRouterProvider) {
         $scope.markerClicked = function(m) {
             window.alert("clicked");
         };
-      
-          
-
-
-
       }
     });
 });
