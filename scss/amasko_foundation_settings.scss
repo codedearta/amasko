@@ -1,5 +1,5 @@
 // amasko_foundation_settings
-
+$primary-color: #008CBA;
 $white       : #FFFFFF;
 
 $include-html-classes: true;
@@ -24,3 +24,45 @@ $topbar-menu-link-font-size: rem-calc(15);
 $topbar-menu-link-color-toggled: $white;
 $topbar-menu-link-transform: normal;
 $topbar-menu-link-weight: $font-weight-normal;
+
+
+$include-html-nav-classes: $include-html-classes;
+
+// We use this to control padding.
+$side-nav-padding: -10px 0px 0px 0px;
+
+// We use these to control list styles.
+$side-nav-list-type: none;
+$side-nav-list-position: inside;
+$side-nav-list-margin: rem-calc(0 0 7 0);
+
+// We use these to control link styles.
+$side-nav-link-color: $primary-color;
+$side-nav-link-color-active: scale-color($side-nav-link-color, $lightness: 30%);
+$side-nav-link-color-hover: scale-color($side-nav-link-color, $lightness: 30%);
+$side-nav-font-size: rem-calc(16);
+$side-nav-font-weight: normal;
+$side-nav-font-weight-active: $side-nav-font-weight;
+$side-nav-font-family: $body-font-family;
+$side-nav-font-family-active: $side-nav-font-family;
+
+// We use these to control border styles
+$side-nav-divider-size: 1px;
+$side-nav-divider-style: solid;
+$side-nav-divider-color: scale-color(#fff, $lightness: 10%);
+
+
+
+
+$include-html-accordion-classes: $include-html-classes;
+
+$accordion-navigation-padding: 8px;
+$accordion-navigation-bg-color: scale-color($body-bg, $lightness: -10%);
+$accordion-navigation-hover-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -5%);
+$accordion-navigation-active-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -3%);
+$accordion-navigation-font-color: $body-font-color;
+$accordion-navigation-font-size: rem-calc(16);
+$accordion-navigation-font-family: $body-font-family;
+
+$accordion-content-padding: 10px 17px;
+$accordion-content-active-bg-color: $white;
