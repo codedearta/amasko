@@ -1,5 +1,5 @@
 .logo {
-    width:100%;
+    /* width:100%; */
 }
 
 .amasko-content {
@@ -17,6 +17,10 @@
 
 .accordion {
     margin-top: 10px;
+}
+
+.side-nav li.active {
+    background: scale-color($body-bg, $lightness: -10%);
 }
 
 

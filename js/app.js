@@ -1,4 +1,4 @@
-var Amasko = angular.module('Amasko', ['ui.router','google-maps', 'mm.foundation']).
+var amasko = angular.module('Amasko', ['ui.router','google-maps', 'mm.foundation']).
 
 config(function($stateProvider, $urlRouterProvider) {
   //
@@ -14,14 +14,17 @@ config(function($stateProvider, $urlRouterProvider) {
     .state('Behandlungen', {
       url: '/Behandlungen',
       templateUrl: 'pages/Behandlungen.html',
-      controller: function($scope) {
-        $scope.oneAtATime = true;
-        //$scope.isOpen = false;
+      controller: function($scope, $state) {
+        $state.go('Behandlungen.Gesicht');
+        $scope.selected = 'Gesicht';
       }
     })
     .state('Behandlungen.Gesicht', {
       url: "/Behandlungen/Gesicht",
       templateUrl: "pages/Behandlungen/Gesicht.html",
+      controller: function($scope){
+          $scope.oneAtATime = true;
+      }
     })
     .state('Behandlungen.Haende_und_Fuesse', {
       url: "/Behandlungen/Haende_und_Fuesse",

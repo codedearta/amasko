@@ -1,13 +1,13 @@
 <div class="row"> 
   <div class="small-12 medium-3 columns">
       <ul class="side-nav">
-          <li><a ui-sref="Behandlungen.Gesicht">Gesicht</a></li>
-          <li><a ui-sref="Behandlungen.Haende_und_Fuesse">Hände und Füsse</a></li>
-          <li><a ui-sref="Behandlungen.Haarentfernung">Haarentfernung</a></li>
-          <li><a ui-sref="Behandlungen.Wellness">Körperbehandlung und Wellness</a></li>
-          <li><a ui-sref="Behandlungen.Cellulite">Cellulite Behandlung</a></li>
-          <li><a ui-sref="Behandlungen.Fettreduktion">Fettreduktion</a></li>
-          <li><a ui-sref="Behandlungen.Powerplate">Powerplate</a></li>
+          <li ng-class="{active: selected==='Gesicht'}" ><a ui-sref="Behandlungen.Gesicht" ng-click="selected='Gesicht'">Gesicht</a></li>
+          <li ng-class="{active: selected==='Haende_und_Fuesse'}"><a ui-sref="Behandlungen.Haende_und_Fuesse" ng-click="selected='Haende_und_Fuesse'" >Hände und Füsse</a></li>
+          <li ng-class="{active: selected==='Haarentfernung'}"><a ui-sref="Behandlungen.Haarentfernung" ng-click="selected='Haarentfernung'">Haarentfernung</a></li>
+          <li ng-class="{active: selected==='Wellness'}"><a ui-sref="Behandlungen.Wellness" ng-click="selected='Wellness'">Körperbehandlung und Wellness</a></li>
+          <li ng-class="{active: selected==='Cellulite'}"><a ui-sref="Behandlungen.Cellulite" ng-click="selected='Cellulite'">Cellulite Behandlung</a></li>
+          <li ng-class="{active: selected==='Fettreduktion'}"><a ui-sref="Behandlungen.Fettreduktion" ng-click="selected='Fettreduktion'">Fettreduktion</a></li>
+          <li ng-class="{active: selected==='Powerplate'}"><a ui-sref="Behandlungen.Powerplate" ng-click="selected='Powerplate'">Powerplate</a></li>
       </ul></div>
   <div class="small-12 medium-9 columns">
       <div ui-view></div>

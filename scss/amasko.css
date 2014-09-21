@@ -14,4 +14,7 @@
 .accordion {
   margin-top: 10px; }
 
+.side-nav li.active {
+  background: black; }
+
 /*# sourceMappingURL=amasko.css.map */
