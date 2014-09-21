@@ -31,9 +31,11 @@ $body-font-family: Arimo, cursive;
 
 // topbar
 $topbar-link-color: $olive !default;
+$topbar-link-color-hover: $olive !default;
+$topbar-link-bg-hover: scale-color($creme, $lightness: -5%);
 $topbar-bg-color: $background-dark-color;
 $topbar-dropdown-bg: $topbar-bg-color;
-$topbar-link-bg-hover: scale-color($topbar-bg-color, $lightness: -14%);
+
 
 $topbar-menu-icon-color: $purple;
 $topbar-menu-link-font-size: rem-calc(15);
@@ -51,10 +53,8 @@ $side-nav-list-position: inside;
 $side-nav-list-margin: rem-calc(0 0 7 0);
 // We use these to control link styles.
 $side-nav-link-color: $olive;
-$side-nav-link-color-active: $primary-color;
-$side-nav-link-color-hover: $primary-color;
-//$side-nav-link-color-active: scale-color($side-nav-link-color, $lightness: 20%);
-//$side-nav-link-color-hover: scale-color($side-nav-link-color, $lightness: 30%);
+$side-nav-link-color-active: $olive;
+//$side-nav-link-color-hover: scale-color($olive, $lightness: -5%);
 $side-nav-font-size: rem-calc(16);
 $side-nav-font-weight: normal;
 $side-nav-font-weight-active: $side-nav-font-weight;
