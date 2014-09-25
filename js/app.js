@@ -67,28 +67,52 @@ config(function($stateProvider, $urlRouterProvider) {
       url: '/Kontakt',
       templateUrl: 'pages/Kontakt.html',
       controller: function($scope) {
-
-        var ll = new google.maps.LatLng(47.372172,8.534329);
-        $scope.mapOptions = {
-            center: ll,
-            zoom: 18,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-
-        //Markers should be added after map is loaded
-        $scope.onMapIdle = function() {
-            if ($scope.myMarkers === undefined){    
-                var marker = new google.maps.Marker({
-                    map: $scope.myMap,
-                    position: ll
-                });
-                $scope.myMarkers = [marker, ];
+        $scope.map = 
+            {
+                center: 
+                    {   
+                        latitude: 47.372172,
+                        longitude: 8.534329
+                    },
+                zoom: 17
+            };
+        $scope.options = {scrollwheel: false};
+        $scope.marker = {
+            id:0,
+            coords: {
+                latitude: 47.372172,
+                longitude: 8.534329
+            },
+            options: { draggable: true },
+            events: {
+                dragend: function (marker, eventName, args) {
+                    $log.log('marker dragend');
+                    $log.log(marker.getPosition().lat());
+                    $log.log(marker.getPosition().lng());
+                }
             }
-        };
-
-        $scope.markerClicked = function(m) {
-            window.alert("clicked");
-        };
+        }
+//        var ll = new google.maps.LatLng(47.372172,8.534329);
+//        $scope.mapOptions = {
+//            center: ll,
+//            zoom: 18,
+//            mapTypeId: google.maps.MapTypeId.ROADMAP
+//        };
+//
+//        //Markers should be added after map is loaded
+//        $scope.onMapIdle = function() {
+//            if ($scope.myMarkers === undefined){    
+//                var marker = new google.maps.Marker({
+//                    map: $scope.myMap,
+//                    position: ll
+//                });
+//                $scope.myMarkers = [marker, ];
+//            }
+//        };
+//
+//        $scope.markerClicked = function(m) {
+//            window.alert("clicked");
+//        };
       }
     });
 });
