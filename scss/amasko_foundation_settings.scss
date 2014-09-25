@@ -33,13 +33,19 @@ $body-font-family: Arimo, cursive;
 $topbar-link-color: $olive !default;
 $topbar-link-color-hover: $olive !default;
 $topbar-link-bg-hover: scale-color($creme, $lightness: -5%);
+
+$topbar-menu-link-color: $olive !default;
+$topbar-menu-icon-color: $olive !default;
+$topbar-menu-link-color-toggled: $olive !default;
+$topbar-menu-icon-color-toggled: $olive !default;
+
 $topbar-bg-color: $background-dark-color;
 $topbar-dropdown-bg: $topbar-bg-color;
 
 
-$topbar-menu-icon-color: $purple;
+$topbar-menu-icon-color: $olive;
 $topbar-menu-link-font-size: rem-calc(15);
-$topbar-menu-link-color-toggled: $purple;
+$topbar-menu-link-color-toggled: $olive;
 $topbar-menu-link-transform: normal;
 $topbar-menu-link-weight: $font-weight-normal;
 
