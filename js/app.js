@@ -83,7 +83,9 @@ config(function($stateProvider, $urlRouterProvider) {
                 latitude: 47.372172,
                 longitude: 8.534329
             },
-            options: { draggable: true },
+            options: { draggable: true,
+                       title: "AMASKO"
+                     },
             events: {
                 dragend: function (marker, eventName, args) {
                     $log.log('marker dragend');
@@ -92,27 +94,6 @@ config(function($stateProvider, $urlRouterProvider) {
                 }
             }
         }
-//        var ll = new google.maps.LatLng(47.372172,8.534329);
-//        $scope.mapOptions = {
-//            center: ll,
-//            zoom: 18,
-//            mapTypeId: google.maps.MapTypeId.ROADMAP
-//        };
-//
-//        //Markers should be added after map is loaded
-//        $scope.onMapIdle = function() {
-//            if ($scope.myMarkers === undefined){    
-//                var marker = new google.maps.Marker({
-//                    map: $scope.myMap,
-//                    position: ll
-//                });
-//                $scope.myMarkers = [marker, ];
-//            }
-//        };
-//
-//        $scope.markerClicked = function(m) {
-//            window.alert("clicked");
-//        };
       }
     });
 });
