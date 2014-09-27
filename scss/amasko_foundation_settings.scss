@@ -28,12 +28,16 @@ $header-font-color: $text-dark-color;
 // font
 $font-weight-normal: normal !default;
 $body-font-family: Arimo, cursive;
+$h4-font-size: 12em;
+
+$row-width: 850px;//rem-calc(10);
 
 // topbar
 $topbar-link-color: $olive !default;
 $topbar-link-color-hover: $olive !default;
 $topbar-link-bg-hover: scale-color($creme, $lightness: -5%);
 $topbar-link-font-size: 18px !default;
+$topbar-link-padding: 31px;// $topbar-height / 3 !default;
 
 $topbar-menu-link-color: $olive !default;
 $topbar-menu-icon-color: $olive !default;
