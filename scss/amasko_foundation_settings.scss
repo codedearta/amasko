@@ -4,32 +4,25 @@ $include-html-global-classes: $include-html-classes;
 
 // colors
 
-$purple: #aa5578;
 $white: #FFFFFF;
 $black: #000000;
-$blue: #008CBA;
-$brown: #653248;
+
+$primary-color: #7F7761; // grauer Text
+$logo_color: #8B6909; // dunkelgold
+
+$body-bg: #F1F1F8; // weissgrau
+$header_bg: #F5D67C; //gelb
+$content_bg: #FFEFC2; // creme
+
+$side_nav_bg: rgb(207, 208, 248); // hellblau
+$accordeon_bg: $header_bg;
+$accordeon_title: $logo_color;
 
 
-$gold: #8B6909;
-$body_background: #F1F1F8;
-$header_background: #F5D67C;
-$content_background: #FFEFC2;
-$text_color: #7F7761;
+$hover_border: #6365AB; // mittelblau
+$menu_underline: #36388A; // dunkelblau
+$border_normal: #C6A239; // border normal (mittel gold)
 
-    
-$background-light-color : $body_background;
-$background-mid-color : $purple;
-$background-dark-color : $body_background;
-
-$text-light-color: $gold;
-$text-mid-color: $blue;
-$text-dark-color: $brown;
-
-$primary-color: $text-mid-color;
-$body-bg: $background-light-color;
-$body-font-color: $text-dark-color;
-$header-font-color: $text-dark-color;
 
 // font
 $font-weight-normal: normal !default;
@@ -38,25 +31,24 @@ $body-font-family: Arimo, cursive;
 $row-width: 850px;//rem-calc(10);
 
 // topbar
-$topbar-link-color: $text_color !default;
-$topbar-link-color-hover: $text_color !default;
+$topbar-link-color: $primary-color !default;
+$topbar-link-color-hover: $primary-color !default;
 
 $topbar-link-font-size: 18px !default;
 $topbar-link-padding: 42px;// $topbar-height / 3 !default;
 
-$topbar-menu-link-color: $text_color !default;
-$topbar-menu-icon-color: $text_color !default;
-$topbar-menu-link-color-toggled: $text_color !default;
-$topbar-menu-icon-color-toggled: $text_color !default;
+$topbar-menu-link-color: $primary-color !default;
+$topbar-menu-icon-color: $primary-color !default;
+$topbar-menu-link-color-toggled: $primary-color !default;
+$topbar-menu-icon-color-toggled: $primary-color !default;
 
-$topbar-link-bg-hover: scale-color($header_background, $lightness: -5%);
-$topbar-bg-color: $header_background;
-$topbar-dropdown-bg: $header_background;
+$topbar-link-bg-hover: scale-color($header_bg, $lightness: -5%);
+$topbar-bg-color: $header_bg;
+$topbar-dropdown-bg: $header_bg;
 
-
-$topbar-menu-icon-color: $gold;
+$topbar-menu-icon-color: $logo_color;
 $topbar-menu-link-font-size: rem-calc(15);
-$topbar-menu-link-color-toggled: $gold;
+$topbar-menu-link-color-toggled: $logo_color;
 $topbar-menu-link-transform: normal;
 $topbar-menu-link-weight: $font-weight-normal;
 
@@ -69,9 +61,15 @@ $side-nav-list-type: none;
 $side-nav-list-position: inside;
 $side-nav-list-margin: rem-calc(0 0 7 0);
 // We use these to control link styles.
-$side-nav-link-color: $gold;
-$side-nav-link-color-active: $gold;
-//$side-nav-link-color-hover: scale-color($gold, $lightness: -5%);
+$side-nav-link-color: $primary-color;
+$side-nav-link-color-active: $primary-color;
+
+.side-nav li.active {
+    background: $side_nav_bg;
+}
+
+$side-nav-bg-color :green;
+$side-nav-link-color-hover: scale-color($primary-color, $lightness: -5%);
 $side-nav-font-size: rem-calc(16);
 $side-nav-font-weight: normal;
 $side-nav-font-weight-active: $side-nav-font-weight;
@@ -85,10 +83,10 @@ $side-nav-divider-color: scale-color($white, $lightness: 10%);
 // accordion
 $include-html-accordion-classes: $include-html-classes;
 $accordion-navigation-padding: 5px;
-$accordion-navigation-bg-color: scale-color($body-bg, $lightness: -10%);
-$accordion-navigation-hover-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -5%);
-$accordion-navigation-active-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -3%);
-$accordion-navigation-font-color: $body-font-color;
+$accordion-navigation-bg-color: $accordeon_bg;
+$accordion-navigation-hover-bg-color: $accordeon_bg;
+$accordion-navigation-active-bg-color: $accordeon_bg;
+$accordion-navigation-font-color: $accordeon_title;
 $accordion-navigation-font-size: rem-calc(16);
 $accordion-navigation-font-family: $body-font-family;
 $accordion-content-padding: 10px 17px;
