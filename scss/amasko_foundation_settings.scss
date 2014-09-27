@@ -38,7 +38,7 @@ $row-width: 850px;//rem-calc(10);
 // topbar
 $topbar-link-color: $gold !default;
 $topbar-link-color-hover: $gold !default;
-$topbar-link-bg-hover: scale-color($body_background, $lightness: -5%);
+
 $topbar-link-font-size: 18px !default;
 $topbar-link-padding: 31px;// $topbar-height / 3 !default;
 
@@ -47,8 +47,9 @@ $topbar-menu-icon-color: $gold !default;
 $topbar-menu-link-color-toggled: $gold !default;
 $topbar-menu-icon-color-toggled: $gold !default;
 
-$topbar-bg-color: $background-dark-color;
-$topbar-dropdown-bg: $topbar-bg-color;
+$topbar-link-bg-hover: scale-color($header_background, $lightness: -5%);
+$topbar-bg-color: $header_background;
+$topbar-dropdown-bg: $header_background;
 
 
 $topbar-menu-icon-color: $gold;
