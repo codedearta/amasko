@@ -1,5 +1,6 @@
 html, body {
     font-size: 14px;
+    color: $text_color;
 }
 
 .header {
@@ -10,18 +11,12 @@ html, body {
     background: $content_background;   
 }
 
-//.top-bar-section {
-//    background: $header_background;
-//}
-
-
 .logo {
     padding-top: 15px;
     padding-left: 15px;/* width:100%; */
 }
 
 .top-bar {
-//    background: $header_background;
     padding-top: 10px;
 }
 
@@ -46,9 +41,6 @@ html, body {
 .side-nav li.active {
     background: scale-color($body-bg, $lightness: -10%);
 }
-
-
-
 
 //@media only screen and (min-width: 10em) {
 //    .top-bar-section ul {display: table; margin: 0 auto;}

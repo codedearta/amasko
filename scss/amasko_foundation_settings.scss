@@ -15,6 +15,8 @@ $gold: #8B6909;
 $body_background: #F1F1F8;
 $header_background: #F5D67C;
 $content_background: #FFEFC2;
+$text_color: #7F7761;
+
     
 $background-light-color : $body_background;
 $background-mid-color : $purple;
@@ -36,16 +38,16 @@ $body-font-family: Arimo, cursive;
 $row-width: 850px;//rem-calc(10);
 
 // topbar
-$topbar-link-color: $gold !default;
-$topbar-link-color-hover: $gold !default;
+$topbar-link-color: $text_color !default;
+$topbar-link-color-hover: $text_color !default;
 
 $topbar-link-font-size: 18px !default;
 $topbar-link-padding: 42px;// $topbar-height / 3 !default;
 
-$topbar-menu-link-color: $gold !default;
-$topbar-menu-icon-color: $gold !default;
-$topbar-menu-link-color-toggled: $gold !default;
-$topbar-menu-icon-color-toggled: $gold !default;
+$topbar-menu-link-color: $text_color !default;
+$topbar-menu-icon-color: $text_color !default;
+$topbar-menu-link-color-toggled: $text_color !default;
+$topbar-menu-icon-color-toggled: $text_color !default;
 
 $topbar-link-bg-hover: scale-color($header_background, $lightness: -5%);
 $topbar-bg-color: $header_background;
