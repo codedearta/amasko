@@ -1,3 +1,11 @@
+
+
+
+html, body {
+    font-size: 13px;
+}
+
+
 .logo {
     padding-top: 15px;
     padding-left: 15px;/* width:100%; */
@@ -29,6 +37,8 @@
 .side-nav li.active {
     background: scale-color($body-bg, $lightness: -10%);
 }
+
+
 
 
 //@media only screen and (min-width: 10em) {
