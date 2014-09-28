@@ -21,10 +21,7 @@ config(function($stateProvider, $urlRouterProvider) {
     })
     .state('Behandlungen.Gesicht', {
       url: "/Behandlungen/Gesicht",
-      templateUrl: "pages/Behandlungen/Gesicht.html",
-      controller: function($scope){
-          $scope.oneAtATime = true;
-      }
+      templateUrl: "pages/Behandlungen/Gesicht.html"
     })
     .state('Behandlungen.Haende_und_Fuesse', {
       url: "/Behandlungen/Haende_und_Fuesse",
@@ -40,7 +37,7 @@ config(function($stateProvider, $urlRouterProvider) {
     })
     .state('Behandlungen.Cellulite', {
       url: "/Behandlungen/Cellulite",
-      templateUrl: "pages/Behandlungen/Cellulite.html",
+      templateUrl: "pages/Behandlungen/Cellulite.html"
     })
     .state('Behandlungen.Fettreduktion', {
       url: "/Behandlungen/Fettreduktion",
