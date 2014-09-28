@@ -1,16 +1,36 @@
+
+
 @import "general";
 @import "topbar";
 @import "side-nav";
 @import "accordion";
+
 @import "foundation/functions";
 @import "foundation";
 @import "topbar";
+
 @import "kontakt";
+
+
+
+
 
 
 html, body {
     font-size: $primary-font-size;//14px;
     color: $primary-color;
+}
+
+h1 {
+    font-size: 18px;   
+}
+
+h3 {
+ font-size: $primary-font-size;   
+}
+
+h2 {
+ font-size: 16px;   
 }
 
 .header {
