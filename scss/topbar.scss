@@ -1,0 +1,36 @@
+// topbar
+$topbar-link-color: $primary-color !default;
+$topbar-link-color-hover: $primary-color !default;
+
+$topbar-link-font-size: 18px !default;
+$topbar-link-padding: 42px;// $topbar-height / 3 !default;
+
+$topbar-menu-link-color: $primary-color !default;
+$topbar-menu-icon-color: $primary-color !default;
+$topbar-menu-link-color-toggled: $primary-color !default;
+$topbar-menu-icon-color-toggled: $primary-color !default;
+
+$topbar-link-bg-hover: $header_bg;
+$topbar-bg-color: $header_bg;
+$topbar-dropdown-bg: $header_bg;
+
+$topbar-menu-icon-color: $logo_color;
+$topbar-menu-link-font-size: rem-calc(15);
+$topbar-menu-link-color-toggled: $logo_color;
+$topbar-menu-link-transform: normal;
+$topbar-menu-link-weight: $font-weight-normal;
+
+.top-bar-section ul li { 
+    border-bottom-style: groove;
+    border-bottom-width: thick;
+    border-bottom-color: rgba(0,0,0,0.0);
+}
+
+.top-bar-section ul li.active_nav { 
+    border-bottom-color: rgb(207, 208, 248);
+}
+
+.top-bar-section ul li:hover { 
+    border-bottom-color: rgb(207, 208, 248);
+}
+

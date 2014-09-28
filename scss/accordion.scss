@@ -1,0 +1,10 @@
+// accordion
+$include-html-accordion-classes: $include-html-classes;
+$accordion-navigation-padding: 5px;
+$accordion-navigation-bg-color: $accordeon_bg;
+$accordion-navigation-hover-bg-color: scale-color($accordeon_bg, $lightness: -5%);
+$accordion-navigation-font-color: $accordeon_title;
+$accordion-navigation-font-size: rem-calc(16);
+$accordion-navigation-font-family: $body-font-family;
+$accordion-content-padding: 10px 17px;
+$accordion-content-active-bg-color: $white;

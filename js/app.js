@@ -98,6 +98,10 @@ config(function($stateProvider, $urlRouterProvider) {
     });
 });
 
+amasko.controller('TopBarCtrl', function($scope){
+            $scope.selected = '';
+})
+
 $(document).foundation({
   accordion: {
     // specify the class used for active (or open) accordion panels

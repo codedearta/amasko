@@ -23,29 +23,67 @@
       
           <!-- Navigation -->
     <div class="row header">
-      <div class="small-12 medium-12 large-12 columns">    
+      <div class="small-12 medium-12 large-12 columns" ng-controller="TopBarCtrl">           
+        <top-bar>
+            <ul class="title-area">
+              <li class="name">
+                <h1><a href="#"></a></h1>
+              </li>
+              <li toggle-top-bar class="menu-icon"><a href="#">Menu</a></li>
+            </ul>
+
+            <top-bar-section>
+
+              <!-- Left Nav Section -->
+              <ul class="left">
+                <li ng-class="{active_nav: selected==='Home'}">
+                    <a ui-sref="Home" ng-click="selected='Home'">
+                        <i class="fa fa-home"></i>&nbsp;Home
+                    </a>
+                </li>
+                <li ng-class="{active_nav: selected==='Behandlungen'}">
+                    <a ui-sref="Behandlungen" ng-click="selected='Behandlungen'">Behandlungen</a>
+                </li>
+                <li ng-class="{active_nav: selected==='Gutscheine'}" >
+                    <a ui-sref="Gutscheine" ng-click="selected='Gutscheine'">Gutscheine</a>
+                </li>
+                <li ng-class="{active_nav: selected==='Gallerie'}">
+                    <a ui-sref="Gallerie" ng-click="selected='Gallerie'">Gallerie</a>
+                </li>
+                <li ng-class="{active_nav: selected==='Kontakt'}">
+                    <a ui-sref="Kontakt" ng-click="selected='Kontakt'">Kontakt</a>
+                </li>
+              </ul>
+            </top-bar-section>
+          </top-bar>
+          
+          
+          
+          
+          
+          
+          
+<!--
           <nav class="top-bar" data-topbar role="navigation">
               <ul class="title-area">
                 <li class="name">
                   <h1><a href="#"></a></h1>
                 </li>
-                 <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
                 <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
               </ul>
               
               
               <section class="top-bar-section">        
-                <!-- Left Nav Section -->
                 <ul class="middle"> 
                   <li><a ui-sref="Home"><i class="fa fa-home"></i>&nbsp;Home</a></li>
                   <li><a ui-sref="Behandlungen">Behandlungen</a></li>
                   <li><a ui-sref="Gutscheine">Gutscheine</a></li>
                   <li><a ui-sref="Gallerie">Gallerie</a></li>
-<!--                  <li><a ui-sref="Shop">Shop</a></li>-->
                   <li><a ui-sref="Kontakt">Kontakt</a></li>
                 </ul>
               </section>
             </nav>
+-->
         </div>
     </div>
       

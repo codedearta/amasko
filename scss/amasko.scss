@@ -1,3 +1,10 @@
+@import "general";
+@import "topbar";
+@import "side-nav";
+@import "accordion";
+@import "foundation/functions";
+@import "foundation";
+
 html, body {
     font-size: 14px;
     color: $primary-color;
@@ -37,10 +44,3 @@ html, body {
 .accordion {
     margin-top: 10px;
 }
-
-
-
-//@media only screen and (min-width: 10em) {
-//    .top-bar-section ul {display: table; margin: 0 auto;}
-//    .top-bar-section ul li {display: table-cell;}
-//}
