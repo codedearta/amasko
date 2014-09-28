@@ -21,7 +21,8 @@ config(function($stateProvider, $urlRouterProvider) {
     })
     .state('Behandlungen.Gesicht', {
       url: "/Behandlungen/Gesicht",
-      templateUrl: "pages/Behandlungen/Gesicht.html"
+      templateUrl: "pages/Behandlungen/Gesicht.html",
+      controller: 'AccordeonCtrl',
     })
     .state('Behandlungen.Haende_und_Fuesse', {
       url: "/Behandlungen/Haende_und_Fuesse",
@@ -30,14 +31,17 @@ config(function($stateProvider, $urlRouterProvider) {
     .state('Behandlungen.Haarentfernung', {
       url: "/Behandlungen/Haarentfernung",
       templateUrl: "pages/Behandlungen/Haarentfernung.html",
+      controller: 'AccordeonCtrl',
     })
     .state('Behandlungen.Wellness', {
       url: "/Behandlungen/Wellness",
       templateUrl: "pages/Behandlungen/Wellness.html",
+      controller: 'AccordeonCtrl',
     })
     .state('Behandlungen.Cellulite', {
       url: "/Behandlungen/Cellulite",
-      templateUrl: "pages/Behandlungen/Cellulite.html"
+      templateUrl: "pages/Behandlungen/Cellulite.html",
+      controller: 'AccordeonCtrl',
     })
     .state('Behandlungen.Fettreduktion', {
       url: "/Behandlungen/Fettreduktion",
@@ -97,6 +101,10 @@ config(function($stateProvider, $urlRouterProvider) {
 
 amasko.controller('TopBarCtrl', function($scope){
             $scope.selected = '';
+})
+
+amasko.controller('AccordeonCtrl', function($scope){
+    $scope.oneAtATime = true;
 })
 
 $(document).foundation({
