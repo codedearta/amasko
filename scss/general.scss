@@ -18,6 +18,8 @@ $side_nav_bg: rgb(207, 208, 248); // hellblau
 $accordeon_bg: $header_bg;
 $accordeon_title: $logo_color; // gold
 
+$transparent: rgba(0,0,0,0.0);
+
 
 
 $hover_border: #6365AB; // mittelblau
@@ -26,6 +28,7 @@ $border_normal: #C6A239; // border normal (mittel gold)
 
 
 // font
+$primary-font-size: 14px;
 $font-weight-normal: normal !default;
 $body-font-family: Arimo, sans-serif;
 

@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "file": "",
-  "sources": ["amasko.scss"],
-  "names": [],
-  "mappings": "AAAA;EACI,OAAM;;AAGV;EACI,SAAS;;AAGb,iBAAiB,GAAG,GAAG,EAAE;EACrB,WAAW;;AAGf;EACI,OAAO;EACP,QAAQ;;AAGZ;EACI,YAAY;;AAGhB,UAAU,EAAE;EACR,YAAY"
-}

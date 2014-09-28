@@ -16,42 +16,39 @@
         <div>E-Mail: <a href="mailto:info@amasko.ch?Subject=Amasko" target="_top">info@amasko.ch</a></div>
         <div>Telefon: <a href="tel:+41 43 810 08 08">043 810 08 08</a></div>
         <br>
-        <div>Öffnungszeiten</div>
-        <table>
-            <tr>
-                <td>Montag - Freitag:</td>
-                <td>9:00 bis 20:00</td>
-            </tr>
-            <tr>
-                <td>Samstag</td>
-                <td>8:00 bis 14:00</td>
-            </tr>
-        </table><br>
-        <div>Termine zu Randzeiten nach Vereinbarung. <br>
-        Haben Sie Fragen oder wünschen Sie eine Beratung? Zögern Sie nicht mit uns Kontakt aufzunehmen.</div>
+        <div>
+            Termine zu Randzeiten nach Vereinbarung.<br>
+            Haben Sie Fragen oder wünschen Sie eine Beratung? Zögern Sie nicht mit uns Kontakt aufzunehmen.
+        </div>
+        <br>
+        
+
+        
+        
+        <table class="no-zebra">
+            <caption>Öffnungszeiten</caption>
+            <tbody>
+                <tr>
+                    <td>Montag - Freitag:</td>
+                    <td>9:00 bis 20:00</td>
+                </tr>
+                <tr>
+                    <td>Samstag</td>
+                    <td>8:00 bis 14:00</td>
+                </tr>
+            </tbody>
+        </table>
+
     </div>
 </div>
 
 
 
-<div class="row">
+<div class="row map">
     <div class="large-12 columns" >
         <google-map center="map.center" zoom="map.zoom">
             <marker coords="marker.coords" options="marker.options" events="marker.events" idkey="marker.id" >
             </marker>
         </google-map>
-<!--
-        <div id="map_canvas" ui-map="myMap" 
-        style="height:300px;width:400px;border:2px solid #777777;margin:3px; border:1px solid" 
-        ui-options="mapOptions" 
-        ui-event="{'map-idle' : 'onMapIdle()'}"
-        >
-        </div>
-        
-        In addition to creating the markers on the map, div elements with existing google.maps.Marker object should be created to hook up with events 
-        <div ng-repeat="marker in myMarkers" ui-map-marker="myMarkers[$index]"
-                        ui-event="{'map-click': 'markerClicked(marker)'}">
-        </div>    
--->
     </div>
 </div>

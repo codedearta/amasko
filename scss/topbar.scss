@@ -21,7 +21,6 @@ $topbar-menu-icon-color: $logo_color;
     padding-right: 5px;
     padding-bottom: 0px;
     padding-left: 0px;
-    //padding: 0px 10px 0px 5px;
 }
 
 
@@ -29,7 +28,7 @@ $topbar-menu-icon-color: $logo_color;
 .top-bar-section ul li { 
     border-bottom-style: groove;
     border-bottom-width: thick;
-    border-bottom-color: rgba(0,0,0,0.0);
+    border-bottom-color: $transparent;
 }
 
 .top-bar-section ul li.active_nav { 

@@ -1,2 +1,49 @@
-@import "amasko";
+@import "general";
+@import "topbar";
+@import "side-nav";
+@import "accordion";
+@import "foundation/functions";
+@import "foundation";
+@import "topbar";
+@import "kontakt";
 
+
+html, body {
+    font-size: $primary-font-size;//14px;
+    color: $primary-color;
+}
+
+.header {
+    background: $header_bg;
+}
+
+.content {
+    background: $content_bg;   
+}
+
+.logo {
+    padding-top: 15px;
+    padding-left: 15px;/* width:100%; */
+}
+
+.top-bar {
+    padding-top: 10px;
+}
+
+.top-bar .name { 
+    width: 0px;
+}
+
+.amasko-content {
+    padding-left: 15px;
+    padding-top: 35px;
+}
+
+.angular-google-map-container { 
+    width: 400px;
+    height: 400px;
+}
+
+.accordion {
+    margin-top: 10px;
+}

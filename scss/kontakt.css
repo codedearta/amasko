@@ -1,0 +1,25 @@
+table {
+  margin: 0px;
+  border: none;
+  width: auto;
+  min-width: 0;
+  background: #FFEFC2;
+  border-collapse: collapse; }
+  table caption {
+    font-family: Arimo, sans-serif;
+    font-size: 14px;
+    color: #7F7761;
+    text-align: left; }
+  table tr th, table tr td {
+    padding-top: 2px;
+    padding-left: 0px;
+    background: #FFEFC2;
+    font-family: Arimo, sans-serif;
+    font-size: 14px;
+    color: #7F7761; }
+
+.map {
+  padding-top: 35px;
+  padding-bottom: 30px; }
+
+/*# sourceMappingURL=kontakt.css.map */
