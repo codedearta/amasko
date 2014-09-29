@@ -33,6 +33,14 @@ h2 {
  font-size: 16px;   
 }
 
+a.link {
+        color: $link-normal;       
+}
+a:hover.link {
+        text-decoration: underline;   
+}
+
+
 .header {
     background: $header_bg;
 }
