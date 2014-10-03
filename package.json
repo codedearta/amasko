@@ -2,9 +2,15 @@
   "name": "foundation-libsass-template",
   "version": "0.0.1",
   "devDependencies": {
-    "node-sass": "~0.7.0",
+    "broccoli": "^0.13.0",
+    "broccoli-bower": "^0.2.1",
+    "broccoli-concat": "0.0.11",
+    "broccoli-merge-trees": "^0.1.4",
+    "broccoli-sass": "^0.2.2",
+    "broccoli-static-compiler": "^0.1.4",
     "grunt": "~0.4.1",
     "grunt-contrib-watch": "~0.5.3",
-    "grunt-sass": "~0.8.0"
+    "grunt-sass": "~0.8.0",
+    "node-sass": "~0.7.0"
   }
 }

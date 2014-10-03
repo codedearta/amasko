@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "file": "",
-  "sources": ["kontakt.scss","general.scss"],
-  "names": [],
-  "mappings": "AAEA;EACI,QAAQ;EACR,QAAQ;EACR,OAAO;EACP,WAAW;EACX,YCOS;EDNT,iBAAiB;EAArB,MAAM;IAGE,aCsBW;IDrBX,WCmBY;IDlBZ,OCJQ;IDKR,YAAY;EAGpB,MAAM,GAAG,IAAI,MAAM,GAAG;IAEV,aAAa;IACb,cAAc;IAEd,YCRC;IDSD,aCUO;IDTP,WCOQ;IDNR,OChBI;;ADuBhB;EACI,aAAa;EACb,gBAAgB"
-}

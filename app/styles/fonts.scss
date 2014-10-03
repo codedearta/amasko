@@ -1,0 +1,29 @@
+// font
+$primary-font-size: 14px;
+$font-weight-normal: normal !default;
+$body-font-family: Arimo, sans-serif;
+
+// We use these to control header font styles
+$header-font-family: $body-font-family;
+$header-font-weight: bold;
+$header-font-style: normal;
+$header-font-color: $logo_color;
+$header-line-height: 1.4;
+$header-top-margin: .2rem;
+$header-bottom-margin: .5rem;
+$header-text-rendering: optimizeLegibility;
+
+// We use these to control header font sizes
+$h1-font-size: 1.7rem;
+$h2-font-size: 1.4rem;
+$h3-font-size: 1.3rem;
+$h4-font-size: 1.3rem;
+$h5-font-size: 1.3rem;
+$h6-font-size: 1.2rem;
+
+// These control how subheaders are styled
+$subheader-line-height: 1.4;
+$subheader-font-color: scale-color($header-font-color, $lightness: 35%);
+$subheader-font-weight: 300;
+$subheader-top-margin: .2rem;
+$subheader-bottom-margin: .5rem;

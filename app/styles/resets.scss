@@ -1,0 +1,59 @@
+html, body {
+    font-size: $primary-font-size;//14px;
+    color: $primary-color;
+}
+
+h1 {
+    font-size: 18px;   
+}
+
+h3 {
+ font-size: $primary-font-size;   
+}
+
+h2 {
+ font-size: 16px;   
+}
+
+a.link {
+        color: $link-normal;       
+}
+a:hover.link {
+        text-decoration: underline;   
+}
+
+
+.header {
+    background: $header_bg;
+}
+
+.content {
+    background: $content_bg;   
+}
+
+.logo {
+    padding-top: 15px;
+    padding-left: 15px;/* width:100%; */
+}
+
+.top-bar {
+    padding-top: 10px;
+}
+
+.top-bar .name { 
+    width: 0px;
+}
+
+.amasko-content {
+    padding-left: 15px;
+    padding-top: 35px;
+}
+
+.angular-google-map-container { 
+    width: 400px;
+    height: 400px;
+}
+
+.accordion {
+    margin-top: 10px;
+}
