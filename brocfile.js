@@ -4,8 +4,11 @@ var pickFiles = require('broccoli-static-compiler'),
     mergeTrees = require('broccoli-merge-trees'),
     compileSass = require('broccoli-sass'),
     csso = require('broccoli-csso'),
+    cleanCSS = require('broccoli-clean-css'),
     htmlmin = require('broccoli-htmlmin'),
-    uglifyJavaScript = require('broccoli-uglify-js');
+    uglifyJavaScript = require('broccoli-uglify-js'),
+    jshint = require('broccoli-jshint'),
+    jslint = require('broccoli-jslint');
 
 var appTree = 'app';
 
@@ -15,7 +18,6 @@ var htmlTree = pickFiles(appTree, {
   files: ['**/*.html'],
   destDir: '.'
 });
-//htmlTree = htmlmin(htmlTree);
 
 var imgTree = pickFiles(appTree, {
   srcDir: '.',
@@ -30,13 +32,26 @@ var imgTree = pickFiles(appTree, {
 // compile sass files
 var foundationScssPath = 'bower_components/foundation/scss';
 var cssTree = compileSass([appTree,foundationScssPath], 'app.scss', 'app.css');  
-cssTree = csso(cssTree);
+cssTree = cleanCSS(cssTree);
 
-// concat the JS
-var scriptsTree = concat(appTree, {  
+// process javascript files
+var scriptsTree = pickFiles(appTree, {
+  srcDir: '.',
+  files: ['**/*.js'],
+  destDir: '.'
+});
+
+// codeanalysis
+scriptsTree = jslint(scriptsTree, { edition:'latest'});
+var jshintTree = jshint(scriptsTree, { log:true});
+
+// concat javascript files
+scriptsTree = concat(scriptsTree, {  
   inputFiles: ['**/*.js'],
   outputFile: '/app.js'
 });
+
+// minify javascript
 scriptsTree = uglifyJavaScript(scriptsTree);
 
 // include bower components
@@ -45,7 +60,6 @@ var bowerTree = pickFiles('bower_components', {
   destDir:'bower_components'
 });
 
-
 // and merge all the trees together
 module.exports = mergeTrees(
   [
@@ -53,5 +67,6 @@ module.exports = mergeTrees(
     imgTree, 
     cssTree, 
     scriptsTree, 
-    bowerTree
+    bowerTree,
+    jshintTree
   ]);  
