@@ -8,5 +8,10 @@
     "broccoli-merge-trees": "^0.1.4",
     "broccoli-sass": "^0.2.2",
     "broccoli-static-compiler": "^0.1.4"
+  },
+  "dependencies": {
+    "broccoli-csso": "^1.0.0",
+    "broccoli-htmlmin": "^1.2.0",
+    "broccoli-uglify-js": "^0.1.3"
   }
 }
