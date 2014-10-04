@@ -64,4 +64,4 @@ $ git pull // pullls the latest source from github
 ```
 
 #####Editors
-AMASKO was developped with [Brackets](http://brackets.io/?lang=en) und [Sublime](http://www.sublimetext.com/). both are very nice and completly free text editors.
+AMASKO was developped with [Brackets](http://brackets.io/?lang=en) und [Sublime](http://www.sublimetext.com/). Both are very nice and completly free text editors.

@@ -1,4 +1,8 @@
+/*jslint browser: true, white: true */
+/*global $, angular, amasko */
+
 amasko.controller('MapCtrl', function($scope) {
+  'use strict';
   $scope.map = { 
                   center: {   
                     latitude: 47.372172,
@@ -15,15 +19,8 @@ amasko.controller('MapCtrl', function($scope) {
                       longitude: 8.534329
                     },
                     options: { 
-                      draggable: true,
+                      draggable: false,
                       title: "AMASKO"
-                    },
-                    events: {
-                      dragend: function (marker, eventName, args) {
-                        $log.log('marker dragend');
-                        $log.log(marker.getPosition().lat());
-                        $log.log(marker.getPosition().lng());
-                      }
                     }
                   };
 });

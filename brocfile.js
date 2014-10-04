@@ -1,13 +1,16 @@
 // Brocfile.js
 var pickFiles = require('broccoli-static-compiler'),
-    concat = require('broccoli-concat'), 
-    mergeTrees = require('broccoli-merge-trees'),
-    compileSass = require('broccoli-sass'),
-    csso = require('broccoli-csso'),
     htmlmin = require('broccoli-htmlmin'),
-    uglifyJavaScript = require('broccoli-uglify-js');
+    compileSass = require('broccoli-sass'),
+    cleanCSS = require('broccoli-clean-css'),
+    jslint = require('broccoli-jslint'),
+    jshint = require('broccoli-jshint'),
+    concat = require('broccoli-concat'), 
+    uglifyJavaScript = require('broccoli-uglify-js'),
+    mergeTrees = require('broccoli-merge-trees');
 
 var appTree = 'app';
+var vendor = 'bower_components';
 
 // static files
 var htmlTree = pickFiles(appTree, {
@@ -15,7 +18,10 @@ var htmlTree = pickFiles(appTree, {
   files: ['**/*.html'],
   destDir: '.'
 });
-//htmlTree = htmlmin(htmlTree);
+
+htmlTree = htmlmin(htmlTree, {
+      empty: true,        // KEEP empty attributes
+});
 
 var imgTree = pickFiles(appTree, {
   srcDir: '.',
@@ -28,23 +34,38 @@ var imgTree = pickFiles(appTree, {
 });
 
 // compile sass files
-var foundationScssPath = 'bower_components/foundation/scss';
+var foundationScssPath = vendor + '/foundation/scss';
 var cssTree = compileSass([appTree,foundationScssPath], 'app.scss', 'app.css');  
-cssTree = csso(cssTree);
+cssTree = cleanCSS(cssTree);
 
-// concat the JS
-var scriptsTree = concat(appTree, {  
+// process javascript files
+var scriptsTree = pickFiles(appTree, {
+  srcDir: '.',
+  files: ['**/*.js'],
+  destDir: '.'
+});
+
+// codeanalysis
+scriptsTree = jslint(scriptsTree, { edition:'latest'});
+var jshintTree = jshint(scriptsTree, { log:true});
+
+// concat javascript files
+scriptsTree = concat(scriptsTree, {  
   inputFiles: ['**/*.js'],
   outputFile: '/app.js'
 });
+
+// minify javascript
 scriptsTree = uglifyJavaScript(scriptsTree);
 
 // include bower components
-var bowerTree = pickFiles('bower_components', {
+var bowerTree = pickFiles(vendor, {
   srcDir:'.',
-  destDir:'bower_components'
+  files: [
+    '**/*.min.js'
+  ],
+  destDir:vendor
 });
-
 
 // and merge all the trees together
 module.exports = mergeTrees(
@@ -53,5 +74,7 @@ module.exports = mergeTrees(
     imgTree, 
     cssTree, 
     scriptsTree, 
-    bowerTree
+    bowerTree,
+    // vendorTree,
+    jshintTree
   ]);  
