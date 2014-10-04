@@ -50,7 +50,7 @@ Install the [chrome live reload pluging](https://chrome.google.com/webstore/deta
 
 ####Deploy the latest changes to AZURE
 
-To deploy AMASKO you must ahve a github-account. Just create a new one so that I can add you as a contributor.
+To deploy AMASKO you must have a github-account. Just create a new one on https://github.com so that I can add you as a contributor.
 After that, got to your AMASKO root-directory and use the following commands.
 
 #####Mac
