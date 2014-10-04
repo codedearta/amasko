@@ -1,0 +1,21 @@
+// colors
+$white: #FFFFFF;
+$black: #000000;
+
+$primary-color: #7F7761; // grauer Text
+$logo_color: #8D6A3E; // dunkelgold
+
+$body-bg: #F1F1F8; // weissgrau
+$header_bg: #D0B388; //gelb
+$content_bg: #FAEEDB; // creme
+
+$side_nav_bg: rgb(207, 208, 248); // hellblau
+$accordeon_bg: $header_bg;
+$accordeon_title: $logo_color; // gold
+
+$transparent: rgba(0,0,0,0.0);
+
+$hover_border: #6365AB; // mittelblau
+$menu_underline: #36388A; // dunkelblau
+$border_normal: #C6A239; // border normal (mittel gold)
+$link-normal: $hover_border;
