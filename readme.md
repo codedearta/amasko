@@ -74,25 +74,6 @@ $ git push
 Done! You can now browse the website on http://amasko.azurewebsites.net/
 To deploy the Amasko website to amasko.ch just transfer your local public_html folder via ftp to amasko.ch.
 
-####Folder Structure
-
-package.json
-bower.json
-brocfile.js
-\- app
-&nbsp;&nbsp;&nbsp; index.html
-&nbsp;&nbsp;&nbsp; app.js
-&nbsp;&nbsp;&nbsp; app.scss
-&nbsp;&nbsp;&nbsp;\+ img
-&nbsp;&nbsp;&nbsp;\- styles
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; colours.scss
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...
-&nbsp;&nbsp;&nbsp;\- views
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ home
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ treatments
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ coupons
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ gallery
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ contact
 
 #####Other important git commands:
 ```
