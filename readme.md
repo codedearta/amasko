@@ -12,6 +12,13 @@ die Ordner: "catalog.wci", "logfiles" und "stats" stammen aus der alten Anaskowe
 + [Git](http://git-scm.com/)
 + [Node](http://nodejs.org/)
 
+####Comandline
+#####Mac
+Hit cmd+spacebar and type terminal. It will open a termnal for you. Change to the directory where you want to work with the amasko sources.
+#####Windows
+open the commandline as administrator. Change to the directory where you want to work with the amasko sources.
+
+
 The Amasko source files are on github. To get the latest version clone it. 
 ```
 $ git clone https://github.com/sepprenfer/amasko.git
@@ -19,10 +26,17 @@ $ git clone https://github.com/sepprenfer/amasko.git
 
 Amasko is a website created with html5, css and javascript. Install it with npm.
 
+MAC:
 ```
 $ sudo npm install
 $ bower install
 ```
+WINDOWS:
+```
+$ npm install
+$ bower install
+```
+
 
 ###Getting started
 #### Run it locally
@@ -37,8 +51,19 @@ Install the [chrome live reload pluging](https://chrome.google.com/webstore/deta
 ####Deploy the latest changes to AZURE
 
 To create a new build for deployment got to the amasko root-directory and use the following commands
+
+#####Mac
 ```
 $ rm -rf public_html
+```
+
+#####Windows
+```
+$ rmdir /S public_html
+```
+
+Then the commands for both operating systems are the same
+```
 $ broccoli build public_html
 $ git add --all
 $ git commit -m "deployment"
