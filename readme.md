@@ -34,6 +34,18 @@ $ broccoli serve
 It will start a local webserver on port 4200. Open the website by clicking [AMASKO](http://localhost:4200).
 Install the [chrome live reload pluging](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en) to always see the latest version of the website while developing.
 
+####Deploy the latest changes to AZURE
+
+To create a new build for deployment got to the amasko root-directory and use the following commands
+```
+$ rm -rf public_html
+$ broccoli build public_html
+$ git add --all
+$ git commit -m "deployment"
+$ git push
+```
+Done!
+
 
 ####Folder Structure
 
