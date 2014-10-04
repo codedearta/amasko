@@ -11,6 +11,7 @@ die Ordner: "catalog.wci", "logfiles" und "stats" stammen aus der alten Anaskowe
 ####Prerequisites
 + [Git](http://git-scm.com/)
 + [Node](http://nodejs.org/)
++ Texteditor [Sublime](http://www.sublimetext.com/) or [Brackets](http://brackets.io/?lang=en)
 
 ####Comandline
 #####Mac
