@@ -71,7 +71,7 @@ $ git commit -m "deployment"
 $ git push
 ```
 Done! You can now browse the website on http://amasko.azurewebsites.net/
-
+To deploy the Amasko website to amasko.ch just transfer your local public_html folder via ftp to amasko.ch.
 
 ####Folder Structure
 
