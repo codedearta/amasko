@@ -14,8 +14,11 @@ $include-html-global-classes: $include-html-classes;
 @import "foundation";
 @import "styles/topbar";
 
+@import "index";
 @import "views/contact/contact";
 @import "views/coupons/coupons";
+@import "views/treatments/treatments";
+
 
 @import "styles/resets";
 
