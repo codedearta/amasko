@@ -11,6 +11,7 @@ die Ordner: "catalog.wci", "logfiles" und "stats" stammen aus der alten Anaskowe
 ####Prerequisites
 + [Git](http://git-scm.com/)
 + [Node](http://nodejs.org/)
++ Texteditor [Sublime](http://www.sublimetext.com/) or [Brackets](http://brackets.io/?lang=en)
 
 ####Comandline
 #####Mac
@@ -45,12 +46,13 @@ To run it locally just run
 ```
 $ broccoli serve
 ```
-It will start a local webserver on port 4200. Open the website by clicking [AMASKO](http://localhost:4200).
+It will start a local webserver on port 4200. Open the website by clicking http://localhost:4200.
 Install the [chrome live reload pluging](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en) to always see the latest version of the website while developing.
 
 ####Deploy the latest changes to AZURE
 
-To create a new build for deployment got to the amasko root-directory and use the following commands
+To deploy AMASKO you must have a github-account. Just create a new one on https://github.com so that I can add you as a contributor.
+After that, got to your AMASKO root-directory and use the following commands.
 
 #####Mac
 ```
@@ -69,28 +71,9 @@ $ git add --all
 $ git commit -m "deployment"
 $ git push
 ```
-Done!
+Done! You can now browse the website on http://amasko.azurewebsites.net/
+To deploy the Amasko website to amasko.ch just transfer your local public_html folder via ftp to amasko.ch.
 
-
-####Folder Structure
-
-package.json
-bower.json
-brocfile.js
-\- app
-&nbsp;&nbsp;&nbsp; index.html
-&nbsp;&nbsp;&nbsp; app.js
-&nbsp;&nbsp;&nbsp; app.scss
-&nbsp;&nbsp;&nbsp;\+ img
-&nbsp;&nbsp;&nbsp;\- styles
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; colours.scss
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...
-&nbsp;&nbsp;&nbsp;\- views
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ home
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ treatments
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ coupons
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ gallery
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ contact
 
 #####Other important git commands:
 ```
@@ -99,6 +82,3 @@ $ git commit -m "add some comments here."  // commits the changes to the local r
 $ git push // pushes the changes to github
 $ git pull // pullls the latest source from github
 ```
-
-#####Editors
-AMASKO was developped with [Brackets](http://brackets.io/?lang=en) und [Sublime](http://www.sublimetext.com/). Both are very nice and completly free text editors.
