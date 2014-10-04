@@ -101,6 +101,3 @@ $ git commit -m "add some comments here."  // commits the changes to the local r
 $ git push // pushes the changes to github
 $ git pull // pullls the latest source from github
 ```
-
-#####Editors
-AMASKO was developped with [Brackets](http://brackets.io/?lang=en) und [Sublime](http://www.sublimetext.com/). Both are very nice and completly free text editors.
