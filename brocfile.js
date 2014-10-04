@@ -21,6 +21,12 @@ var htmlTree = pickFiles(appTree, {
 
 htmlTree = htmlmin(htmlTree, {
       empty: true,        // KEEP empty attributes
+      //cdata: true,        // KEEP CDATA from scripts
+      //comments: true,     // KEEP comments
+      conditionals: true, // KEEP conditional internet explorer comments
+      //spare: true,        // KEEP redundant attributes
+      //quotes: true,       // KEEP arbitrary quotes
+      //loose: true         // KEEP retain one whitespace
 });
 
 var imgTree = pickFiles(appTree, {
@@ -62,7 +68,7 @@ scriptsTree = uglifyJavaScript(scriptsTree);
 var bowerTree = pickFiles(vendor, {
   srcDir:'.',
   files: [
-    '**/*.min.js'
+    '**/*.min.js','**/*.map', '**/modernizr.js', '**/normalize.css'
   ],
   destDir:vendor
 });
@@ -75,6 +81,5 @@ module.exports = mergeTrees(
     cssTree, 
     scriptsTree, 
     bowerTree,
-    // vendorTree,
     jshintTree
   ]);  
