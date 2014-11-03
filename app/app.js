@@ -69,6 +69,9 @@ amasko.config(function($stateProvider, $urlRouterProvider) {
     .state('Kontakt', {
       url: '/Kontakt',
       templateUrl: viewsPath + 'contact/contact.html'
+    }).state('Philosophie', {
+      url: '/Philosophie',
+      templateUrl: viewsPath + 'philosophie/philosophie.html'
     });
 });
 
