@@ -1,4 +1,4 @@
-module('JSHint - views/contact');
-test('views/contact/mapCtrl.js should pass jshint', function() { 
-  ok(true, 'views/contact/mapCtrl.js should pass jshint.'); 
+QUnit.module('JSHint - views/contact');
+QUnit.test('views/contact/mapCtrl.js should pass jshint', function(assert) { 
+  assert.ok(true, 'views/contact/mapCtrl.js should pass jshint.'); 
 });

@@ -52,7 +52,7 @@ var scriptsTree = pickFiles(appTree, {
 });
 
 // codeanalysis
-scriptsTree = jslint(scriptsTree, { edition:'latest'});
+//scriptsTree = jslint(scriptsTree, { edition:'latest'});
 var jshintTree = jshint(scriptsTree, { log:true});
 
 // concat javascript files
